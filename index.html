@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="post" class="info">
+        <div class="text">
+            <h2>Contact Us</h2>
+            <p>The woodoo team is looking forward to hearing from you </p>
+        </div>
+        <div class="small_input">
+            <input type="text" name='name' placeholder="Full Name" required>
+            <input type="text" name='position' placeholder="Title/Position" required>
+            <select required>
+                <option disabled selected>Practice/Institution</option>
+                <option>Practice</option>
+                <option>Institution</option>
+            </select>
+            <input type="email" name='email' placeholder="Email Adress" required>
+            <input type="text" name='phone_number' placeholder="Phone Number" required>
+            <select required>
+                <option disabled selected>Medical Profession</option>
+                <option>option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+                <option>option 5</option>
+            </select>
+        </div>
+        <div class="big_input">
+            <input type="text" name='injury' placeholder="Type Of Injury" required>
+            <textarea width="300px" height="150px" placeholder="Enter Message" required></textarea>
+        </div>
+        <div class="button">
+            <button type="submit"> Send Message</button>
+        </div>
+    </form>
+    <div class="map">
+        <map></map>
+    </div>
+
+    <script defer src="index.js"></script>
+</body>
+
+</html>
