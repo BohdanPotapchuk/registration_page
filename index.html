@@ -17,21 +17,30 @@
         <div class="small_input">
             <input type="text" name='name' placeholder="Full Name" required>
             <input type="text" name='position' placeholder="Title/Position" required>
-            <select required>
-                <option disabled selected>Practice/Institution</option>
-                <option>Practice</option>
-                <option>Institution</option>
-            </select>
+            <div class="select" id="select-2">
+                <button type="button" class="select__toggle" name="car" value="ford" data-select="toggle" data-index="1">Practice/Institution</button>
+                <div class="select__dropdown">
+                  <ul class="select__options">
+                    <li class="select__option" data-select="option" data-value="option 1" data-index="0">option 1</li>
+                    <li class="select__option" data-select="option" data-value="option 2" data-index="1">option 2</li>
+                    <li class="select__option" data-select="option" data-value="option 3" data-index="2">option 3</li>
+                    <li class="select__option" data-select="option" data-value="option 4" data-index="3">option 4</li>
+                  </ul>
+                </div>
+              </div>
             <input type="email" name='email' placeholder="Email Adress" required>
             <input type="text" name='phone_number' placeholder="Phone Number" required>
-            <select required>
-                <option disabled selected>Medical Profession</option>
-                <option>option 1</option>
-                <option>option 2</option>
-                <option>option 3</option>
-                <option>option 4</option>
-                <option>option 5</option>
-            </select>
+            <div class="select" id="select-1">
+                <button type="button" class="select__toggle" name="car" value="ford" data-select="toggle" data-index="1">Medical Profession</button>
+                <div class="select__dropdown">
+                  <ul class="select__options">
+                    <li class="select__option" data-select="option" data-value="option 1" data-index="0">option 1</li>
+                    <li class="select__option" data-select="option" data-value="option 2" data-index="1">option 2</li>
+                    <li class="select__option" data-select="option" data-value="option 3" data-index="2">option 3</li>
+                    <li class="select__option" data-select="option" data-value="option 4" data-index="3">option 4</li>
+                  </ul>
+                </div>
+              </div>
         </div>
         <div class="big_input">
             <input type="text" name='injury' placeholder="Type Of Injury" required>
@@ -41,11 +50,11 @@
             <button type="submit"> Send Message</button>
         </div>
     </form>
-    <div class="map">
-        <map></map>
+    <div id="map">
+        
     </div>
-
-    <script defer src="index.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhporSTpw4Lhy9ZeBobCTh2X6IR3Na2mE&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v6_cABCDE" async defer ></script>
+    <script src="index.js"></script>
 </body>
-
 </html>
