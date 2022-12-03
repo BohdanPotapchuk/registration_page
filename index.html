@@ -1,60 +1,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="mobile.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@900&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
 
 <body>
-    <form action="post" class="info">
-        <div class="text">
-            <h2>Contact Us</h2>
-            <p>The woodoo team is looking forward to hearing from you </p>
-        </div>
-        <div class="small_input">
-            <input type="text" name='name' placeholder="Full Name" required>
-            <input type="text" name='position' placeholder="Title/Position" required>
-            <div class="select" id="select-2">
-                <button type="button" class="select__toggle" name="car" value="ford" data-select="toggle" data-index="1">Practice/Institution</button>
-                <div class="select__dropdown">
-                  <ul class="select__options">
-                    <li class="select__option" data-select="option" data-value="option 1" data-index="0">option 1</li>
-                    <li class="select__option" data-select="option" data-value="option 2" data-index="1">option 2</li>
-                    <li class="select__option" data-select="option" data-value="option 3" data-index="2">option 3</li>
-                    <li class="select__option" data-select="option" data-value="option 4" data-index="3">option 4</li>
-                  </ul>
-                </div>
-              </div>
-            <input type="email" name='email' placeholder="Email Adress" required>
-            <input type="text" name='phone_number' placeholder="Phone Number" required>
-            <div class="select" id="select-1">
-                <button type="button" class="select__toggle" name="car" value="ford" data-select="toggle" data-index="1">Medical Profession</button>
-                <div class="select__dropdown">
-                  <ul class="select__options">
-                    <li class="select__option" data-select="option" data-value="option 1" data-index="0">option 1</li>
-                    <li class="select__option" data-select="option" data-value="option 2" data-index="1">option 2</li>
-                    <li class="select__option" data-select="option" data-value="option 3" data-index="2">option 3</li>
-                    <li class="select__option" data-select="option" data-value="option 4" data-index="3">option 4</li>
-                  </ul>
-                </div>
-              </div>
-        </div>
-        <div class="big_input">
-            <input type="text" name='injury' placeholder="Type Of Injury" required>
-            <textarea width="300px" height="150px" placeholder="Enter Message" required></textarea>
-        </div>
-        <div class="button">
-            <button type="submit"> Send Message</button>
-        </div>
-    </form>
-    <div id="map">
-        
+  <form action="post" class="info">
+    <div class="text">
+      <h2>Contact Us</h2>
+      <p>The woodoo team is looking forward to hearing from you </p>
     </div>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhporSTpw4Lhy9ZeBobCTh2X6IR3Na2mE&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v6_cABCDE" async defer ></script>
-    <script src="index.js"></script>
+    <div class="small_input">
+      <input type="text" name='name' placeholder="Full Name*" required>
+      <input type="text" name='position' placeholder="Title/Position*" required>
+      <div class="select" id="select-2">
+        <button type="button" class="select__toggle" name="" value="" data-select="toggle"
+          data-index="1">Practice/Institution*</button>
+        <div class="select__dropdown">
+          <ul required class="select__options">
+            <li class="select__option" data-select="option" data-value="option 1" data-index="0">Option 1</li>
+            <li class="select__option" data-select="option" data-value="option 2" data-index="1">Option 2</li>
+            <li class="select__option" data-select="option" data-value="option 3" data-index="2">Option 3</li>
+            <li class="select__option" data-select="option" data-value="option 4" data-index="3">Option 4</li>
+            <li class="select__option" data-select="option" data-value="option 4" data-index="3">Option 5</li>
+          </ul>
+        </div>
+      </div>
+      <input type="email" name='email' placeholder="Email Adress*" required>
+      <input type="text" name='phone_number' placeholder="Phone Number*" required>
+      <div class="select" id="select-1">
+        <button type="button" class="select__toggle" name="" value="" data-select="toggle" data-index="1">Medical
+          Profession*</button>
+        <div class="select__dropdown">
+          <ul class="select__options">
+            <li class="select__option" data-select="option" data-value="option 1" data-index="0">Option 1</li>
+            <li class="select__option" data-select="option" data-value="option 2" data-index="1">Option 2</li>
+            <li class="select__option" data-select="option" data-value="option 3" data-index="2">Option 3</li>
+            <li class="select__option" data-select="option" data-value="option 4" data-index="3">Option 4</li>
+            <li class="select__option" data-select="option" data-value="option 4" data-index="3">Option 5</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="big_input">
+      <div class="select" id="select-3">
+        <button type="button" class="select__toggle" name="" value="" data-select="toggle" data-index="1">Type of
+          Injury*</button>
+        <div class="select__dropdown">
+          <ul class="select__options">
+            <li class="select__option" data-select="option" data-value="option 1" data-index="0">Option 1</li>
+            <li class="select__option" data-select="option" data-value="option 2" data-index="1">Option 2</li>
+            <li class="select__option" data-select="option" data-value="option 3" data-index="2">Option 3</li>
+            <li class="select__option" data-select="option" data-value="option 4" data-index="3">Option 4</li>
+            <li class="select__option" data-select="option" data-value="option 4" data-index="3">Option 5</li>
+          </ul>
+        </div>
+      </div>
+      <textarea width="300px" height="150px" placeholder="Enter Message*" required></textarea>
+    </div>
+    <div class="button">
+      <button type="submit"> Send Message</button>
+    </div>
+  </form>
+  <div title="map" id="map">
+
+  </div>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhporSTpw4Lhy9ZeBobCTh2X6IR3Na2mE&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v6_cABCDE"
+    async defer></script>
+  <script src="index.js"></script>
 </body>
+
 </html>
